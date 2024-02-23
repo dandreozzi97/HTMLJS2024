@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Calculator</title>
+</head>
+<body>
+    <script>
+    
+     var hourly_rate = 14.50;
+     var hours_worked = 32;
+     var weeks_worked = 2;
+     var tax_rate = 20 / 100;
+     
+
+     hourly_rate = prompt(
+        "What's your hourly pay? "
+     )
+
+     hours_worked = prompt(
+        "How many hours did you work? "
+     )
+    
+     weeks_worked = prompt(
+        "How many weeks did you work? "
+     )
+
+     var gross_pay = hourly_rate * hours_worked * weeks_worked;
+     var tax_amount = gross_pay * tax_rate;
+     var net_pay = gross_pay - tax_amount;
+     
+        alert(
+             `Gross Pay: ${gross_pay} ` +
+             `\n` +
+             `Uncle Sam's Share: ${tax_amount}` +
+             `\n` +
+            `Net Pay: ${net_pay}` 
+        )
+
+    console.log("Hourly Pay: $", hourly_rate);
+    console.log();
+    console.log("Hours Worked", hours_worked);
+    console.log();
+    console.log("Weeks Worked", weeks_worked);
+    console.log();
+    console.log("Tax Rate: ", tax_rate);
+    console.log();
+    console.log("Gross Pay: $", gross_pay);
+    console.log();
+    console.log("Tax Amount: $", tax_amount);
+    console.log();
+    console.log("Net Pay: $", net_pay);
+    console.log();
+
+</script>
+    
+</body>
+</html>
